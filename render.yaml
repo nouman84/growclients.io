@@ -2,7 +2,6 @@ services:
   - type: web
     name: growclients-io
     runtime: static
-    buildCommand: ""
     staticPublishPath: .
     headers:
       - path: /*
