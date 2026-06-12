@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hebah Nouman — Freelance Full-Stack Developer | GrowClients</title>
+  <meta name="description" content="Hebah Nouman is a freelance full-stack developer helping businesses grow their client base with web apps, AI automation, e-commerce, and SEO. Based in Lahore, working worldwide.">
+  <link rel="canonical" href="https://growclients.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://growclients.io/">
+  <meta property="og:title" content="Hebah Nouman — Freelance Full-Stack Developer | GrowClients">
+  <meta property="og:description" content="Web apps, AI automation, e-commerce, and SEO that turn visitors into clients.">
+  <meta property="og:site_name" content="GrowClients">
+  <meta property="og:image" content="https://growclients.io/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://growclients.io/og-image.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2311271d'/%3E%3Cpath d='M32 50V30M32 30c0-9 6-15 16-16-1 10-7 16-16 16zm0 6c0-7-5-12-13-13 1 8 6 13 13 13z' stroke='%23a8f55f' stroke-width='4' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Hebah Nouman",
+    "jobTitle": "Freelance Full-Stack Developer",
+    "email": "nouman915@gmail.com",
+    "url": "https://growclients.io/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "109 J-1 WAPDA Town",
+      "addressLocality": "Lahore",
+      "addressRegion": "Punjab",
+      "addressCountry": "PK"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --paper: #f6f2e8;
+      --paper-deep: #ede7d6;
+      --ink: #11271d;
+      --ink-soft: #3c5247;
+      --lime: #a8f55f;
+      --lime-deep: #5d9c1e;
+      --rule: rgba(17, 39, 29, 0.16);
+      --serif: "Fraunces", Georgia, serif;
+      --sans: "Archivo", "Helvetica Neue", sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* grain overlay */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.5;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    ::selection { background: var(--lime); color: var(--ink); }
+
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--lime-deep);
+      outline-offset: 3px;
+    }
+
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -60px;
+      z-index: 100;
+      background: var(--ink);
+      color: var(--paper);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 12px; }
+
+    .label {
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--ink-soft);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .label::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--lime-deep);
+    }
+
+    /* ---------- header ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: color-mix(in srgb, var(--paper) 88%, transparent);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+    .logo {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 20px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo svg { display: block; }
+    .logo em { font-style: italic; color: var(--lime-deep); }
+    .nav ul {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav ul a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-soft);
+      transition: color 0.2s;
+    }
+    .nav ul a:hover { color: var(--ink); }
+    .nav-cta {
+      background: var(--ink);
+      color: var(--paper) !important;
+      padding: 9px 18px;
+      border-radius: 999px;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--lime-deep); }
+
+    /* ---------- hero ---------- */
+    .hero {
+      position: relative;
+      padding: 96px 0 110px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      top: -220px;
+      right: -180px;
+      width: 640px;
+      height: 640px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(168, 245, 95, 0.45), transparent 65%);
+    }
+    .hero-bg svg {
+      position: absolute;
+      bottom: -40px;
+      right: 4%;
+      width: min(380px, 38vw);
+      opacity: 0.9;
+    }
+    .hero .label { margin-bottom: 28px; }
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(44px, 7.6vw, 96px);
+      line-height: 1.04;
+      letter-spacing: -0.015em;
+      max-width: 13ch;
+    }
+    .hero h1 em {
+      font-style: italic;
+      font-weight: 500;
+      position: relative;
+      white-space: nowrap;
+    }
+    .hero h1 em::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.08em;
+      height: 0.28em;
+      background: var(--lime);
+      z-index: -1;
+      transform: scaleX(0);
+      transform-origin: left;
+      animation: underline 0.7s 1s cubic-bezier(0.6, 0, 0.2, 1) forwards;
+    }
+    @keyframes underline { to { transform: scaleX(1); } }
+    .hero p.lede {
+      margin-top: 32px;
+      font-size: 19px;
+      max-width: 52ch;
+      color: var(--ink-soft);
+    }
+    .hero-actions {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 15px 30px;
+      border-radius: 999px;
+      transition: transform 0.2s, background 0.2s, color 0.2s;
+    }
+    .btn-primary {
+      background: var(--ink);
+      color: var(--paper);
+    }
+    .btn-primary:hover { background: var(--lime-deep); transform: translateY(-2px); }
+    .btn-ghost {
+      border: 1.5px solid var(--ink);
+      color: var(--ink);
+    }
+    .btn-ghost:hover { background: var(--lime); border-color: var(--lime); transform: translateY(-2px); }
+
+    .hero-meta {
+      margin-top: 64px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 40px;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+    }
+    .hero-meta span { display: flex; align-items: center; gap: 8px; }
+    .hero-meta .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--lime-deep);
+    }
+
+    /* staggered load reveal */
+    .hero .label, .hero h1, .hero .lede, .hero-actions, .hero-meta {
+      opacity: 0;
+      transform: translateY(22px);
+      animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+    }
+    .hero h1 { animation-delay: 0.12s; }
+    .hero .lede { animation-delay: 0.26s; }
+    .hero-actions { animation-delay: 0.4s; }
+    .hero-meta { animation-delay: 0.54s; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+
+    /* ---------- sections ---------- */
+    section { padding: 96px 0; }
+    section + section { border-top: 1px solid var(--rule); }
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 56px;
+    }
+    .section-head h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(32px, 4.4vw, 52px);
+      letter-spacing: -0.01em;
+    }
+    .section-head h2 em { font-style: italic; color: var(--lime-deep); }
+
+    /* services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--paper-deep);
+      border: 1px solid var(--rule);
+      border-radius: 18px;
+      padding: 32px 28px;
+      position: relative;
+      transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px -18px rgba(17, 39, 29, 0.35);
+      background: var(--paper);
+    }
+    .card .num {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 15px;
+      color: var(--lime-deep);
+    }
+    .card h3 {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 23px;
+      margin: 14px 0 10px;
+      line-height: 1.25;
+    }
+    .card p { font-size: 15px; color: var(--ink-soft); }
+    .card:nth-child(even) { transform: translateY(18px); }
+    .card:nth-child(even):hover { transform: translateY(12px); }
+
+    /* skills */
+    .skills { background: var(--ink); color: var(--paper); }
+    .skills .label { color: rgba(246, 242, 232, 0.65); }
+    .skills .section-head h2 em { color: var(--lime); }
+    .skills-note { max-width: 46ch; color: rgba(246, 242, 232, 0.7); font-size: 15px; }
+    .skill-groups {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px 48px;
+    }
+    .skill-group h3 {
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 500;
+      font-size: 19px;
+      color: var(--lime);
+      margin-bottom: 16px;
+    }
+    .chips { display: flex; flex-wrap: wrap; gap: 9px; list-style: none; }
+    .chips li {
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 7px 15px;
+      border: 1px solid rgba(246, 242, 232, 0.28);
+      border-radius: 999px;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+    .chips li:hover {
+      border-color: var(--lime);
+      background: rgba(168, 245, 95, 0.12);
+    }
+
+    /* about */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .about-grid blockquote {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(22px, 2.6vw, 30px);
+      line-height: 1.4;
+      border-left: 3px solid var(--lime-deep);
+      padding-left: 24px;
+    }
+    .about-copy p { color: var(--ink-soft); font-size: 16.5px; }
+    .about-copy p + p { margin-top: 18px; }
+    .about-stats {
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .stat {
+      border: 1px solid var(--rule);
+      border-radius: 14px;
+      padding: 16px 22px;
+      background: var(--paper-deep);
+    }
+    .stat strong {
+      display: block;
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 600;
+    }
+    .stat span { font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+    /* contact */
+    .contact { text-align: center; position: relative; }
+    .contact .label { justify-content: center; }
+    .contact .label::before { display: none; }
+    .contact h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(38px, 6vw, 74px);
+      line-height: 1.08;
+      margin: 22px auto 18px;
+      max-width: 18ch;
+    }
+    .contact h2 em { font-style: italic; color: var(--lime-deep); }
+    .contact p { color: var(--ink-soft); max-width: 46ch; margin: 0 auto 36px; }
+    .contact-email {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2.6vw, 26px);
+      text-decoration: none;
+      border-bottom: 2px solid var(--lime);
+      padding-bottom: 3px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .contact-email:hover { color: var(--lime-deep); }
+    .contact-addr {
+      margin-top: 36px;
+      font-style: normal;
+      font-size: 13.5px;
+      letter-spacing: 0.05em;
+      color: var(--ink-soft);
+    }
+
+    /* footer */
+    footer {
+      border-top: 1px solid var(--rule);
+      padding: 28px 0;
+      font-size: 13px;
+      color: var(--ink-soft);
+    }
+    footer .wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+      justify-content: space-between;
+    }
+
+    /* scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+    }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (max-width: 760px) {
+      .nav ul li:not(:last-child) { display: none; }
+      .hero { padding: 64px 0 80px; }
+      section { padding: 72px 0; }
+      .about-grid { grid-template-columns: 1fr; gap: 36px; }
+      .card:nth-child(even) { transform: none; }
+      .card:nth-child(even):hover { transform: translateY(-6px); }
+      .hero-bg svg { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-delay: 0s !important;
+        transition-duration: 0.01ms !important;
+      }
+      .hero .label, .hero h1, .hero .lede, .hero-actions, .hero-meta, .reveal {
+        opacity: 1; transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#top">Skip to main content</a>
+
+  <header>
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="#top" aria-label="GrowClients home">
+        <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#11271d"/><path d="M32 50V30M32 30c0-9 6-15 16-16-1 10-7 16-16 16zm0 6c0-7-5-12-13-13 1 8 6 13 13 13z" stroke="#a8f55f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        grow<em>clients</em>.io
+      </a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav-cta" href="#contact">Hire me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-bg" aria-hidden="true">
+        <svg viewBox="0 0 200 200" fill="none"><path d="M100 190V95M100 95c0-30 20-50 55-53-3 33-22 53-55 53zm0 25c0-24-16-40-44-43 3 26 19 43 44 43z" stroke="#11271d" stroke-opacity="0.14" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="wrap">
+        <p class="label">Hebah Nouman · Freelance Full-Stack Developer</p>
+        <h1>I build software that <em>grows clients</em> for your business.</h1>
+        <p class="lede">Web apps, AI automation, e-commerce, and SEO — designed, built, and shipped end-to-end by one developer who treats your pipeline like her own.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Start a project</a>
+          <a class="btn btn-ghost" href="#services">See what I do</a>
+        </div>
+        <div class="hero-meta">
+          <span><span class="dot"></span>Available for new projects</span>
+          <span>Lahore, Pakistan — working worldwide</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" aria-label="Services">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>What I <em>do</em></h2>
+          <p class="label">Services</p>
+        </div>
+        <div class="services-grid">
+          <article class="card reveal">
+            <p class="num">01</p>
+            <h3>Full-Stack Web Apps</h3>
+            <p>Production web applications with React, Next.js, and FastAPI — from CRMs and dashboards to customer portals, with PostgreSQL behind them.</p>
+          </article>
+          <article class="card reveal">
+            <p class="num">02</p>
+            <h3>AI &amp; Automation</h3>
+            <p>GPT-4 and Claude integrations, AI voice agents, and n8n workflows that take repetitive work off your team's plate.</p>
+          </article>
+          <article class="card reveal">
+            <p class="num">03</p>
+            <h3>E-commerce &amp; Shopify</h3>
+            <p>Shopify apps, Stripe payments and subscriptions, and storefront integrations that convert browsers into buyers.</p>
+          </article>
+          <article class="card reveal">
+            <p class="num">04</p>
+            <h3>SEO &amp; Growth</h3>
+            <p>Technical SEO, keyword research with real data, and content tooling that brings qualified traffic — then keeps it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills" aria-label="Skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Skills, <em>proven in shipped projects</em></h2>
+          <p class="skills-note">Every tool below is in production today across CRMs, e-commerce apps, AI callers, and content platforms I've built.</p>
+        </div>
+        <div class="skill-groups">
+          <div class="skill-group reveal">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>PHP</li><li>Swift</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li>React</li><li>Next.js 14</li><li>Vite</li><li>TailwindCSS</li><li>shadcn/ui</li><li>Streamlit</li><li>SwiftUI</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Backend &amp; Databases</h3>
+            <ul class="chips">
+              <li>FastAPI</li><li>Node.js</li><li>SQLAlchemy</li><li>PostgreSQL</li><li>Redis</li><li>Firebase</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>AI &amp; Automation</h3>
+            <ul class="chips">
+              <li>OpenAI GPT-4</li><li>Anthropic Claude</li><li>n8n</li><li>Retell AI voice agents</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>DevOps &amp; Cloud</h3>
+            <ul class="chips">
+              <li>Render</li><li>Docker</li><li>Cloudflare</li><li>AWS S3 / SES</li><li>GitHub Actions</li><li>Playwright E2E</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Integrations</h3>
+            <ul class="chips">
+              <li>Stripe</li><li>Shopify</li><li>HubSpot</li><li>ActiveCampaign</li><li>Twilio / Vonage</li><li>Sentry</li><li>DataForSEO</li><li>WordPress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>About <em>Hebah</em></h2>
+          <p class="label">About</p>
+        </div>
+        <div class="about-grid">
+          <blockquote class="reveal">"I don't hand off code — I hand off results you can measure in your client list."</blockquote>
+          <div class="about-copy reveal">
+            <p>I'm Hebah Nouman, a freelance full-stack developer based in Lahore, Pakistan. I work with businesses around the world as a single point of contact for design, development, and deployment — no agency overhead, no hand-offs, no surprises.</p>
+            <p>My projects range from a complete CRM with AI-powered calling, to Shopify SEO tooling, to multilingual service websites. Whatever the stack, the goal is the same: software that wins and keeps clients for your business.</p>
+            <div class="about-stats">
+              <div class="stat"><strong>10+</strong><span>Production projects</span></div>
+              <div class="stat"><strong>End-to-end</strong><span>Design → deploy</span></div>
+              <div class="stat"><strong>1 contact</strong><span>No agency overhead</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="wrap">
+        <p class="label reveal">Let's work together</p>
+        <h2 class="reveal">Have a project that needs to <em>grow</em>?</h2>
+        <p class="reveal">Tell me what you're building and where your clients should come from. I'll reply within one business day.</p>
+        <p class="reveal"><a class="contact-email" href="mailto:nouman915@gmail.com">nouman915@gmail.com</a></p>
+        <address class="contact-addr reveal">109 J-1 WAPDA Town, Lahore, Punjab, Pakistan</address>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 Hebah Nouman · growclients.io</span>
+      <span>Built by hand. Deployed on Render.</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        els.forEach(function (el) { el.classList.add("in"); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+      els.forEach(function (el, i) {
+        el.style.transitionDelay = (i % 4) * 70 + "ms";
+        io.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>

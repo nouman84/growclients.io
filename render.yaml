@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: growclients-io
+    runtime: static
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
