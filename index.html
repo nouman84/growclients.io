@@ -131,17 +131,47 @@
       max-width: 1180px;
       margin: 0 auto;
     }
-    .logo {
-      font-family: var(--serif);
-      font-weight: 600;
-      font-size: 20px;
-      text-decoration: none;
+    .identity {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
+      text-decoration: none;
     }
-    .logo svg { display: block; }
-    .logo em { font-style: italic; color: var(--lime-deep); }
+    .identity svg { display: block; flex: none; }
+    .id-text strong {
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: 19px;
+      display: block;
+      line-height: 1.15;
+    }
+    .id-text span {
+      font-size: 10.5px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--lime-deep);
+      font-weight: 600;
+    }
+    .avail {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      border: 1px solid var(--rule);
+      border-radius: 999px;
+      padding: 7px 14px;
+    }
+    .avail .dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--lime-deep);
+      box-shadow: 0 0 0 3px rgba(168, 245, 95, 0.4);
+    }
     .nav ul {
       display: flex;
       gap: 28px;
@@ -534,14 +564,15 @@
 
   <header>
     <nav class="nav" aria-label="Main">
-      <a class="logo" href="#top" aria-label="GrowClients home">
-        <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#11271d"/><path d="M32 50V30M32 30c0-9 6-15 16-16-1 10-7 16-16 16zm0 6c0-7-5-12-13-13 1 8 6 13 13 13z" stroke="#a8f55f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
-        grow<em>clients</em>.io
+      <a class="identity" href="#top" aria-label="Hebah Nouman — home">
+        <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#11271d"/><path d="M32 50V30M32 30c0-9 6-15 16-16-1 10-7 16-16 16zm0 6c0-7-5-12-13-13 1 8 6 13 13 13z" stroke="#a8f55f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        <span class="id-text"><strong>Hebah Nouman</strong><span>Full-Stack Developer</span></span>
       </a>
       <ul>
         <li><a href="#services">Services</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#about">About</a></li>
+        <li role="none"><span class="avail" role="status"><span class="dot" aria-hidden="true"></span>Available</span></li>
         <li><a class="nav-cta" href="#contact">Hire me</a></li>
       </ul>
     </nav>
@@ -555,7 +586,7 @@
         <svg viewBox="0 0 200 200" fill="none"><path d="M100 190V95M100 95c0-30 20-50 55-53-3 33-22 53-55 53zm0 25c0-24-16-40-44-43 3 26 19 43 44 43z" stroke="#11271d" stroke-opacity="0.14" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
       <div class="wrap">
-        <p class="label">Hebah Nouman · Freelance Full-Stack Developer</p>
+        <p class="label">Hi, I'm Hebah —</p>
         <h1>I build software that <em>grows clients</em> for your business.</h1>
         <p class="lede">Web apps, AI automation, e-commerce, and SEO — designed, built, and shipped end-to-end by one developer who treats your pipeline like her own.</p>
         <div class="hero-actions">
