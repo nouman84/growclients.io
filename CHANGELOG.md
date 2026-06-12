@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1.0] - 2026-06-13
+
+### Changed
+
+- Contact section: replaced the email link with a contact form (name, email, project details) posting via FormSubmit.co, with honeypot spam field, HTML5 validation, and a success banner after redirect.
+
 ## [1.0.0] - 2026-06-12
 
 ### Added
