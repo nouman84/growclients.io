@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.0] - 2026-06-13
+
+### Changed
+
+- Header: personal brand wordmark (Hebah Nouman + role) replaces the growclients.io logo, with a green "Available" trust pill in the nav; domain brand remains in the footer.
+- Hero eyebrow is now a personal greeting ("Hi, I'm Hebah —") instead of repeating the name/role from the header.
+
 ## [1.1.0] - 2026-06-13
 
 ### Changed
